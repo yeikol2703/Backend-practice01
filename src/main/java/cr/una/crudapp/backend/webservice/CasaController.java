@@ -28,7 +28,7 @@ import cr.una.crudapp.backend.modelo.Casa;
  */
 @Controller
 @CrossOrigin
-@RequestMapping(value = Constants.URL_PREFIX + "casa")
+@RequestMapping(value = Constants.URL_PREFIX + "casas")
 public class CasaController {
 
     @Autowired

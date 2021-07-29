@@ -13,6 +13,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  *
@@ -25,7 +26,7 @@ import lombok.Setter;
 public class Casa implements Serializable{
     
     @ManyToOne
-    @JoinColumn(name = "id_persona")
+    @JoinColumn(name = "id_persona", nullable=false)
     private Persona persona;
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)

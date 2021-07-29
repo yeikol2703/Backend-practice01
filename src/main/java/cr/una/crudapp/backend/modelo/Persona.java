@@ -1,5 +1,6 @@
 package cr.una.crudapp.backend.modelo;
 
+import java.io.Serializable;
 import java.util.List;
 import lombok.Getter;
 import lombok.Setter;
@@ -13,8 +14,8 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "persona")
-public class Persona {
-
+public class Persona implements Serializable {
+    
     // Atributos
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
