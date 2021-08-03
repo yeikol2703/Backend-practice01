@@ -10,6 +10,7 @@ import org.springframework.stereotype.Repository;
 
 
 import java.util.Properties;
+
 @Repository
 @SpringBootApplication(exclude= HibernateJpaAutoConfiguration.class)
 @ComponentScan({ "cr.una.crudapp.backend.*" })

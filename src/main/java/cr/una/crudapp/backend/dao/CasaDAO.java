@@ -8,11 +8,13 @@ package cr.una.crudapp.backend.dao;
 import com.google.common.base.Preconditions;
 import cr.una.crudapp.backend.excepcion.CasaNotFoundException;
 import cr.una.crudapp.backend.modelo.Casa;
+import org.springframework.stereotype.Repository;
 
 /**
  *
  * Estudiar mas a fondo para entender la abstraccion que realiza hibernate
  */
+@Repository
 public class CasaDAO extends AbstractHibernateDao implements ICasaDAO {
 
     @Override

@@ -26,7 +26,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class Casa implements Serializable{
     
     @ManyToOne
-    @JoinColumn(name = "id_persona", nullable=false)
+    @JoinColumn(name = "id_persona")
     private Persona persona;
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
